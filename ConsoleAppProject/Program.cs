@@ -26,8 +26,13 @@ namespace ConsoleAppProject
             Console.WriteLine(" =================================================");
             Console.WriteLine();
 
-            DistanceConverter converter = new DistanceConverter();
+            Console.WriteLine("which app do you like to run?");
+            string App = Console.ReadLine();
+
+            if (App == "1")
+            { DistanceConverter converter = new DistanceConverter ();
             converter.Run();
+
         }
     }
 }
